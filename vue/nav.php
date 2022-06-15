@@ -15,15 +15,16 @@
         <div id="types">
             <div class="t1"></div>
             <a href="./index.php">Accueil</a>
+            <?php 
+                foreach($cates as $cate){
+            ?>
             <div class="t2"></div>
-            <a href="./index.php?id=1">Sport</a>
+            <a href="./index.php?id=<?=htmlspecialchars($cate['id']);?>"><?=htmlspecialchars($cate['libelles']);?></a>
+            <?php
+                }
+            ?>
             <div class="t3"></div>
-            <a href="./index.php?id=2">Santé</a>
-            <div class="t4"></div>
-            <a href="./index.php?id=3">Education</a>
-            <div class="t5"></div>
-            <a href="./index.php?id=4">Politique</a>
-            <div class="t6"></div>
+            
         </div>
     </nav>
 
@@ -36,9 +37,9 @@
             <h1>
                 <?= htmlspecialchars($post['title']); ?>
             </h1>
-            <h2>
+            <p>
                 <?= htmlspecialchars($post['content']); ?>
-            </h2>
+            </p>
         </div>
     </div>
 

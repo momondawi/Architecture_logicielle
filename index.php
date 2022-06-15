@@ -2,6 +2,7 @@
     
     $cat=$_GET["id"];
 
-    require('modele/model.php');
+    require_once('modele/model.php');
     $posts= getPosts($cat);
-    require('vue/nav.php');
+    $cates=getCategorie();
+    require_once('vue/nav.php');

@@ -15,7 +15,7 @@ nav{
     align-items: center;
 }
 
-nav>h2{
+h2{
     margin-top: 0;
     padding-top: 20px;
     font-size: 20px;
@@ -38,21 +38,6 @@ nav>h2{
 }
 
 .t3{
-    height: 30px;
-    border: 1px solid white;
-}
-
-.t4{
-    height: 30px;
-    border: 1px solid white;
-}
-
-.t5{
-    height: 30px;
-    border: 1px solid white;
-}
-
-.t6{
     height: 30px;
     border: 1px solid white;
 }
